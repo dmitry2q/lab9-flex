@@ -1,0 +1,89 @@
+
+.text{
+     font-size: 29px;
+     text-align: right;
+     margin-top: 50px;
+     margin-left: 20px;
+}
+
+.select {
+    background-color: #9A1212;
+    transform: scale(1.3);
+    color: white;
+}
+
+.select a {
+    color: white;
+}
+
+.eda{
+    margin-top: 30px;
+    margin-left: 50px;
+    position: absolute;
+    left: -40px;
+    top: 0;
+    width: 15%;
+}
+
+.footext{
+    margin-left: 70%;
+    text-align: right;
+    color: #9A1212;
+}
+
+.content {
+    position: relative;
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .text {
+        font-size: 25px;
+        padding-left: 100px
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .text {
+        font-size: 18px;
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .select {
+        margin: 0 20px;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .footext {
+        font-size: 16px;
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .dkp {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+}
+

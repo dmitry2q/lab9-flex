@@ -1,0 +1,370 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: #9A1212;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.bg-white {
+    background: white;
+}
+
+.case1{
+    padding-top: 7vh;
+    min-height: 695px;
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#box1 {
+    display: block;
+    position: relative;
+    background: white;
+    height: 35vw;
+    width: 35vw;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.dkp {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.dkp img {
+    width: 8vw;
+}
+
+#image1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image1 img {
+    display: block;
+    width: 20vw;
+    height: auto;
+    margin-bottom: -40px;
+}
+
+#content1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.buttons li {
+    margin: 0 30px;
+    margin-left: 50px;
+}
+
+.button {
+    display: flex;
+    background: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+#podrob{
+    margin-top: 75px;
+}
+
+.button a {
+    text-decoration: none;
+    color: black;
+}
+
+#zagolovok{
+    color: white;
+    text-align: right;
+    font-size: 60px;
+    margin-top: 80px;
+}
+
+#zagolovok span{
+    font-size: 100px;
+}
+
+#text {
+    color: white;
+    font-size: 18px;
+    text-align: right;
+    margin-top: 20px;
+    width: 400px;
+}
+
+#vetka1 {
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+}
+
+#vetochka1 {
+    position: absolute;
+    bottom: 15%;
+    height: 40%;
+}
+
+.new {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+i{
+   font-size: 50px;
+   color: #9A1212;
+   margin-bottom: 75px;
+}
+
+#products {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 5000;
+}
+
+#new h1 {
+    font-size: 96px;
+    letter-spacing: 35px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    margin-left: 120px;
+}
+
+.product {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.border {
+    position: absolute;
+    width: 116px;
+    height: 220px;
+    background: #C4C4C4;
+    border-radius: 34px;
+}
+
+.photo {
+    position: relative;
+    background: url('../img/straw.png');
+    background-size: cover;
+    background-position: center center;
+    width: 133px;
+    height: 220px;
+    border-radius: 45px;
+    margin-left: 24px;
+}
+
+.spec1 {
+    background: url('../img/tomat.png');
+}
+
+.spec2 {
+    background: url('../img/hot.png');
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.title a {
+    text-decoration: none;
+    color: #9A1212;
+    z-index: 5;
+}
+
+
+.footer {
+    position: absolute;
+    align-self: end;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #F3F3F3;
+    bottom: 0;
+}
+
+.footer-text {
+    position: relative;
+    font-size: 24px;
+    margin-left: 20px;
+    z-index: 2;
+}
+
+.vetka2 {
+    position: absolute;
+    right: 200px;
+    bottom: 0;
+    width: auto;
+    height: 100vh;
+    z-index: 0;
+}
+
+@media screen and (max-width: 920px) {
+    .specp2 {
+        display: none;
+    }
+    #new  {
+        width: 90%;
+    }
+    #products {
+        margin-left: 40px;
+    }
+    #new h1 {
+        font-size: 70px;
+        margin-left: 80px;
+    }
+    .vetka2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #box1 {
+        display: none;
+    }
+    .case1 {
+        max-width: none;
+        display: block;
+    }
+    #content1 {
+        width: 100%;
+        align-items: center;
+        z-index: 2;
+    }
+    #vetochka1 {
+        /* display: none; */
+        z-index: 1;
+        height: 50vh;
+        width: auto;
+    }
+    #vetka2 {
+        /* display: none; */
+        z-index: 1;
+        height: 50vh;
+        width: auto;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        width: 100px;
+        height: 25px;
+        border-radius: 18px;
+        background: white;
+        text-align: center;
+    }
+    
+    .button a {
+        margin-top: -2px;
+        text-decoration: none;
+        color: black;
+    }
+
+    #zagolovok {
+        color: white;
+        text-align: center;
+        /* font-size: 44px; */
+        margin-top: 58px;
+    }
+    
+    #zagolovok span {
+        font-size: 64px;
+    }
+    
+    #text {
+        display: block;
+        width: 400px;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 19px;
+    }
+    
+    .buttons li {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .specp1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    #zagolovok {
+        color: white;
+        text-align: center;
+        font-size: 44px;
+        margin-top: 58px;
+    }
+    
+    #zagolovok span {
+        font-size: 64px;
+    }
+    
+    #text {
+        display: block;
+        width: 300px;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 19px;
+    }
+    #new h1 {
+        font-size: 50px;
+        margin-left: 80px;
+        letter-spacing: 20px;
+    }
+
+    .footer-text {
+        font-size: 18px;
+    }
+}
